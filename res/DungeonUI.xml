@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<synth>
+	<style id="all">
+		<font name="Courier New" size="14"/>
+		<state>
+			<color value="BLACK" type="BACKGROUND"/>
+			<color value="GREEN" type="FOREGROUND"/>
+		</state>
+		<state value="SELECTED">
+			<color value="GREEN" type="TEXT_BACKGROUND"/>
+			<color value="BLACK" type="TEXT_FOREGROUND"/>
+		</state>
+	</style>
+	<bind style="all" type="region" key="RootPane"/>
+	<bind style="all" type="region" key="TextField"/>
+	<bind style="all" type="region" key="TextArea"/>
+	
+	<style id="button">
+		<opaque value="true"/>
+		<state>
+			<font name="Courier New" size="14" style="BOLD"/>
+			<color value="#B11ED6" type="BACKGROUND"/>
+		</state>
+		<insets top="4" left="6" bottom="4" right="6"/>
+	</style>
+	<bind style="button" type="region" key="Button"/>
+	
+	<style id="scrollbar">
+		<opaque value="true"/>
+		<state>
+			<color value="#1A1416" type="BACKGROUND"/>
+		</state>
+		
+		<imagePainter method="scrollBarThumbBackground" path="/green.png" sourceInsets="4 6 4 6" paintCenter="true"/>
+	</style>
+	<bind style="scrollbar" type="region" key="ScrollBar"/>
+</synth>
